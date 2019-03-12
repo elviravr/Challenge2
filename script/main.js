@@ -26,7 +26,7 @@ function showTime(){
         h = 12;
     } //wordt AM
     
-    else if(h > 11){
+    else if(h > 12){
         h = h - 12;
         session = "PM";
         document.body.style.backgroundColor="rgb(209, 236, 255)"
