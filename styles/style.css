@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	background: #0f3854;
+}
+
+.date {
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-70%);
+	color: #125f96;
+	font-size: 18px;
+	letter-spacing: 7px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.clock {
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(40%);
+	color: #c4c4c4;;
+	letter-spacing: 4px;
+	font-size: 28px;
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 0 0 20px #5ba6d8,  0 0 20px rgba(10, 175, 230, 0);
+	display: inline;
+	}
+
+img {
+	margin: auto;
+	position: absolute;
+	display: inline;
+	min-width: 200px;
+	max-width: 250px;
+	left: 52%;
+	transform: translateX(-50%) translateY(50%);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+		"header"
+		"clockdate";
+}
+
+.header {
+		grid-area: header;
+	}
+
+.clock .date {
+		grid-area: clockdate;
+	}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	.clock {
+		font-size: 50px;
+	}
+	.date {
+		font-size: 34px;
+	}
+
+	img {
+		min-width: 250px;
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1686px){
+	.clock {
+		font-size: 60px;
+	}
+	.date {
+		font-size: 43px;
+	}
+
+	img {
+		min-width: 280px;
+	}
+}
+
+@media only screen and (min-width: 1687px){
+	.clock {
+		font-size: 70px;
+	}
+	.date {
+		font-size: 50px;
+	}
+	img {
+		min-width: 400px;
+	}
+}
